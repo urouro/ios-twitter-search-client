@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  Sample-Twitter-Timeline
+//
+//  Created by Kenta Nakai on 2014/11/26.
+//
+//
+
+#ifndef Sample_Twitter_Timeline_PrefixHeader_pch
+#define Sample_Twitter_Timeline_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+
+#ifdef DEBUG
+#define LOG(fmt, ...) NSLog((@"[%@] " fmt), NSStringFromSelector(_cmd), ##__VA_ARGS__);
+#define LOG_PRINT(fmt, ...) NSLog((@"%s " fmt), func, ##__VA_ARGS__);
+#define LOG_METHOD NSLog(@"%@/%@", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
+#else
+#define LOG(...);
+#define LOG_METHOD;
+#define LOG_PRINT(...);
+#endif

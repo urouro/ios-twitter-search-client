@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="160" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="cWE-j8-Hau">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TweetCell" rowHeight="160" id="wRF-jV-YoM" customClass="TweetCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wRF-jV-YoM" id="QLq-BU-BK3">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ユーザーネーム" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55M-bp-atI">
+                                                    <rect key="frame" x="8" y="8" width="584" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="w04-iq-9X6"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="18"/>
+                                                    <color key="textColor" red="0.19997379183769226" green="0.20001506805419922" blue="0.19997119903564453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDx-Io-oUP">
+                                                    <rect key="frame" x="8" y="37" width="584" height="115"/>
+                                                    <mutableString key="text">　あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。
+　またそのなかでいっしょになったたくさんのひとたち、ファゼーロとロザーロ、羊飼のミーロや、顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど、いまこの暗い巨きな石の建物のなかで考えていると、みんなむかし風のなつかしい青い幻燈のように思われます。では、わたくしはいつかの小さなみだしをつけながら、しずかにあの年のイーハトーヴォの五月から十月までを書きつけましょう。</mutableString>
+                                                    <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="13"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="55M-bp-atI" firstAttribute="leading" secondItem="QLq-BU-BK3" secondAttribute="leadingMargin" id="744-IX-Ml4"/>
+                                                <constraint firstAttribute="trailing" secondItem="aDx-Io-oUP" secondAttribute="trailing" constant="8" id="7tY-Be-ICx"/>
+                                                <constraint firstItem="aDx-Io-oUP" firstAttribute="top" secondItem="55M-bp-atI" secondAttribute="bottom" constant="8" id="86t-TA-Ge1"/>
+                                                <constraint firstItem="aDx-Io-oUP" firstAttribute="leading" secondItem="QLq-BU-BK3" secondAttribute="leading" constant="8" id="DSO-3J-PJE"/>
+                                                <constraint firstItem="55M-bp-atI" firstAttribute="top" secondItem="QLq-BU-BK3" secondAttribute="topMargin" id="Rzz-z8-A7z"/>
+                                                <constraint firstAttribute="bottom" secondItem="aDx-Io-oUP" secondAttribute="bottom" constant="8" id="iRN-Uj-JdL"/>
+                                                <constraint firstItem="55M-bp-atI" firstAttribute="trailing" secondItem="QLq-BU-BK3" secondAttribute="trailingMargin" id="xr0-Ry-m3L"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="tweetTextLabel" destination="aDx-Io-oUP" id="p9R-ZH-oYM"/>
+                                            <outlet property="userNameLabel" destination="55M-bp-atI" id="kV3-Dr-rHB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cWE-j8-Hau" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="3BS-eU-pQF"/>
+                            <constraint firstAttribute="trailing" secondItem="cWE-j8-Hau" secondAttribute="trailing" id="HSR-bH-0mR"/>
+                            <constraint firstItem="cWE-j8-Hau" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Za2-5v-3qA"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cWE-j8-Hau" secondAttribute="bottom" id="bG9-SG-2Jr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="cWE-j8-Hau" id="dD6-rG-96y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
